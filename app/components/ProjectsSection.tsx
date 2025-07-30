@@ -80,11 +80,11 @@ const projectsData: Project[] = [
       { name: "Kafka", color: "yellow" },
     ],
     images: [
-      "ecom-homepage.png",
-      "ecom-product-details.png",
-      "ecom-cart.png",
-      "ecom-admin-product.png",
-      "ecom-admin-product-edit.png",
+      "ecom/ecom-homepage.png",
+      "ecom/ecom-product-details.png",
+      "ecom/ecom-cart.png",
+      "ecom/ecom-admin-product.png",
+      "ecom/ecom-admin-product-edit.png",
     ],
     githubUrl: "https://github.com/nocillax/ATP3-Ecommerce-Site",
   },
@@ -126,9 +126,12 @@ const projectsData: Project[] = [
       { name: "WebSockets", color: "green" },
     ],
     images: [
-      "https://images.unsplash.com/photo-1551288049-5b323d74c0e6?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop",
+      "isms/isms-homepage.png",
+      "isms/isms-admin-products.png",
+      "isms/isms-create-sale.png",
+      "isms/isms-admin-sale-history.png",
+      "isms/isms-profit-summary.png",
+      "isms/isms-sale-summary.png",
     ],
     githubUrl: "#", // Replace with actual GitHub URL
   },
@@ -143,7 +146,7 @@ function ProjectCard({ project }: { project: Project }) {
   // --- New Slideshow Logic ---
   // Use a ref to hold the interval ID. This doesn't trigger re-renders.
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const SLIDESHOW_INTERVAL = 3000; // 3 seconds
+  const SLIDESHOW_INTERVAL = 5000; // 5 seconds
 
   const handleNext = useCallback(() => {
     setCurrentImage((prev) => (prev + 1) % project.images.length);
