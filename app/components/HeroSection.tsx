@@ -1,14 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function HeroSection() {
-  const [selectedStack, setSelectedStack] = useState<
-    "frontend" | "backend" | "devops" | null
-  >(null);
-
   return (
     <section className="min-h-screen relative overflow-hidden py-24 md:py-0">
       <div className="absolute inset-0">
