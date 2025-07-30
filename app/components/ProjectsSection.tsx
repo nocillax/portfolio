@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useCallback, useRef } from "react";
 
 // --- 1. Define Project Data Structure and Data ---
 // You can easily add, remove, or edit projects here.
@@ -43,41 +43,43 @@ type Project = {
 
 const projectsData: Project[] = [
   {
-    title: "E-commerce Platform",
+    title: "E-commerce Website",
     description:
-      "A high-performance e-commerce solution handling 100K+ daily transactions with real-time inventory and ML-powered recommendations.",
+      "A full-featured e-commerce platform built with NestJS (backend) and Next.js + Tailwind (frontend), designed for Admin, Customer, and Guest roles.",
     frontend: {
       title: "Frontend Architecture",
       features: [
-        "Next.js Server Components",
-        "Real-time Cart & Inventory",
+        "Next.js with Tailwind CSS",
+        "Dynamic Cart with Zustand",
         "Stripe Payment Integration",
-        "PWA with Offline Support",
+        "Modal-based forms and UI feedback (Toastr)",
       ],
     },
     backend: {
       title: "Backend Systems",
       features: [
-        "Node.js Microservices",
-        "Redis Caching Layer",
-        "Kafka Event Streaming",
-        "Elasticsearch Product Search",
+        "NestJS + PostgreSQL",
+        "Authentication with JWT stored in cookies",
+        "Multer for image uploads",
+        "Nodemailer for order status emails",
       ],
     },
     achievements: {
-      title: "Key Achievements",
+      title: "Key Flow & Features",
       points: [
-        "99.99% Uptime with Blue-Green Deployment",
-        "300ms Average API Response Time",
-        "45% Reduction in Infrastructure Costs",
+        "Admin dashboard for product/category/discount management",
+        "Support for product variants (e.g., colors)",
+        "Tags like 'Best Sellers' auto-placed in homepage sections",
+        "Cart displays total price and discount savings in real-time",
+        "Stock updates after payment confirmation via Stripe",
       ],
     },
     tags: [
       { name: "Next.js", color: "blue" },
-      { name: "Node.js", color: "purple" },
+      { name: "NestJS", color: "purple" },
       { name: "PostgreSQL", color: "teal" },
-      { name: "Redis", color: "red" },
-      { name: "Kafka", color: "yellow" },
+      { name: "TailwindCSS", color: "green" },
+      { name: "Zustand", color: "red" },
     ],
     images: [
       "ecom/ecom-homepage.png",
@@ -89,41 +91,43 @@ const projectsData: Project[] = [
     githubUrl: "https://github.com/nocillax/ATP3-Ecommerce-Site",
   },
   {
-    title: "Real-Time Analytics Dashboard",
+    title: "Inventory & Sales Management System",
     description:
-      "A platform for visualizing complex data streams in real-time, built with WebSockets and a scalable serverless architecture.",
+      "A dashboard-based system for managing inventory, sales, stock levels, and business analytics, built using ASP.NET MVC with SQL Server.",
     frontend: {
-      title: "Dashboard UI",
+      title: "Frontend Interface",
       features: [
-        "React & D3.js for charting",
-        "WebSocket real-time updates",
-        "Customizable widget system",
-        "Role-based access control",
+        "Razor Views with Bootstrap (customized SB Admin 2)",
+        "Dynamic dropdowns using Select2",
+        "AJAX-powered product/category search",
+        "Toastr for interactive feedback",
       ],
     },
     backend: {
-      title: "Data Pipeline",
+      title: "Backend Logic",
       features: [
-        "AWS Lambda for processing",
-        "Kinesis for data streaming",
-        "TimescaleDB for time-series data",
-        "GraphQL API",
+        "ASP.NET MVC with Code First",
+        "MSSQL via SQL Server Management Studio",
+        "JWT Authentication",
+        "PDF Report Generation using Rotativa",
       ],
     },
     achievements: {
-      title: "Performance Metrics",
+      title: "Key Flow & Features",
       points: [
-        "Sub-50ms data visualization latency",
-        "Scaled to ingest 1M+ events per minute",
-        "Serverless model reduced costs by 60%",
+        "Separate dashboards for Manager and Salesperson roles",
+        "Sales form with buyer details, product selection, and invoice generation",
+        "KPI cards and visual analytics for both user roles",
+        "Advanced reports (Sales, Profit, Stock, Product) with filters and charts",
+        "Real-time stock updates and downloadable reports",
       ],
     },
     tags: [
-      { name: "React", color: "blue" },
-      { name: "AWS Lambda", color: "orange" },
-      { name: "GraphQL", color: "purple" },
-      { name: "D3.js", color: "red" },
-      { name: "WebSockets", color: "green" },
+      { name: "ASP.NET", color: "blue" },
+      { name: "MSSQL", color: "teal" },
+      { name: "Razor", color: "purple" },
+      { name: "Bootstrap", color: "red" },
+      { name: "JWT", color: "yellow" },
     ],
     images: [
       "isms/isms-homepage.png",
@@ -133,7 +137,8 @@ const projectsData: Project[] = [
       "isms/isms-profit-summary.png",
       "isms/isms-sale-summary.png",
     ],
-    githubUrl: "#", // Replace with actual GitHub URL
+    githubUrl:
+      "https://github.com/nocillax/Inventory---Sales-Management-System",
   },
 ];
 
