@@ -17,9 +17,9 @@ export default function HeroSection() {
           className="text-center mb-8 md:mb-12"
         >
           <div className="space-y-3 md:space-y-6 mb-6 md:mb-8">
-            <p className="text-sm md:text-base text-gray-400 tracking-wide uppercase mb-2">
+            {/* <p className="text-sm md:text-base text-gray-400 tracking-wide uppercase mb-2">
               Turning Ideas Into Interactive Experiences
-            </p>
+            </p> */}
             <div className="relative inline-block px-4 sm:px-0">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500 rounded-2xl blur-xl opacity-25"></div>
               <h1 className="relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500 pb-2">

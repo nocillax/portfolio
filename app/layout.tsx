@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Md Asif Chowdhury - Full-Stack Developer Portfolio",
     description:
       "Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.",
-    url: "https://your-domain.com",
+    url: "https://nocillax-portfolio.vercel.app/",
     siteName: "Md Asif Chowdhury - Portfolio",
     images: [
       {
