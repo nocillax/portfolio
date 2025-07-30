@@ -43,7 +43,7 @@ type Project = {
 
 const projectsData: Project[] = [
   {
-    title: "Enterprise E-commerce Platform",
+    title: "E-commerce Platform",
     description:
       "A high-performance e-commerce solution handling 100K+ daily transactions with real-time inventory and ML-powered recommendations.",
     frontend: {
@@ -80,11 +80,13 @@ const projectsData: Project[] = [
       { name: "Kafka", color: "yellow" },
     ],
     images: [
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
+      "ecom-homepage.png",
+      "ecom-product-details.png",
+      "ecom-cart.png",
+      "ecom-admin-product.png",
+      "ecom-admin-product-edit.png",
     ],
-    githubUrl: "#", // Replace with actual GitHub URL
+    githubUrl: "https://github.com/nocillax/ATP3-Ecommerce-Site",
   },
   {
     title: "Real-Time Analytics Dashboard",
